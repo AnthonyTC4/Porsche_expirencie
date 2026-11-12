@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171A1C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 30%;
+    max-width: 350px;
+    height: 390px;
+    background-color: white;
+    border: 1px solid #34393b;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border-color: #AF0342;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 750px) {
+    .galeria {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}

@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portada{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    z-index: 2;
+}
+.auto-porsche{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-porsche{
+    position: absolute;
+    top: 20px;
+    width: 20%;
+}
+.Menuenlace{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20%;
+    background: transparent;
+    color: white;
+    border: 0px solid white;
+    padding: 12px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.Menuenlace:hover{
+    color: #AF0342;
+    transition: 0.3s;
+}
+.introduccion{
+    width: 100%;
+    height: 600px;
+    background-color: #171A1C;
+    margin: 0;
+    padding: 0;
+}
+.introduccion h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: medium;
+    font-size: x-large;
+}
+.imagen{
+    width: 100%;
+    height: auto;
+
+}
+.opcionesmenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 180px;
+    background-color: #171A1C;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 3;
+}
+.opcionesmenu.activo {
+    display: flex;
+    flex-direction: column;
+}
+.opcionesmenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.opcionesmenu a:hover {
+    color: #AF0342;
+    background-color: #25292B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171A1C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.tarjeta {
+    width: 30%;
+    max-width: 350px;
+    height: 390px;
+    background-color: white;
+    border: 1px solid #34393b;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    border-color: #AF0342;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 750px) {
+    .galeria {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 90%;
+    }
+}
